@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>humanpowered.ca</title> 
+        <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" media="screen,projection" /> 
+        <script src="script.js"></script>
+        <script src="spectrum.js"></script>
+    </head> 
+    <body> 
+ 
+    <div id="content"> 
+        <div id='header'>
+		<h2>Human Powered Radio</h2> 
+
+        <div id='status'>
+            <span id='now-playing'></span>
+            <div>Listener count:<span id='listeners'></span></div>
+        </div>
+
+        </div>
+
+        <p>
+
+        <audio id="player" crossorigin="anonymous">
+            <source src="https://radio.humanpowered.ca" type="audio/mpeg">
+            Your browser does not support this content.
+        </audio>
+        <div id="play-toggle" onclick="togglePlay()">
+           Listen Now
+        </div>
+        <div id="volume-slider">
+            <input id="volume" type="range" min="1" max="100" value="60" class="slider" oninput="setVolume()">
+        </div>
+        <canvas id="spectrum" onclick="toggleInfo()"></canvas>
+
+        </p>
+
+        <div id="about">
+        <p> 
+        Human Powered Radio is a Calgary-based independent internet radio station.
+        
+        Drop us a line on our <a href="http://humanpowered.ca/hello/">freaky-deaky new-age voicemail!</a>
+        <br><br>
+        We are always looking for new volunteers, and there are many ways to contribute. A few examples:
+
+        <ul>
+            <li>Hosting music programs (live or prerecorded)</li>
+            <li>Contributing research for original podcasts</li>
+            <li>Suggesting programming ideas</li>
+            <li>Web application development</li>
+            <li>Creating visual art</li>
+            <li>Producing Station IDs</li>
+        </ul>
+
+        </p>
+            <img src="img/lic.png">
+        </div>
+<!--   
+        <p>You can also sometimes find live games happening on our Twitch channel.</p>
+
+        
+<p><iframe src="https://player.twitch.tv/?channel=humanpoweredradio" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="100%"></iframe></p>
+-->
+
+    </div>
+    </body> 
+</html>

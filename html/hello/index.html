@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HPR Voicemail - Say Hello!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Leave a message</h1>
+    <p>
+
+        Use the controls below to record a short message. When you are ready,
+    you can upload your message for a chance to have it featured on the station!
+
+    <br><br>
+    It seems to work best in Chrome on Android; Playback is broken in Safari on iOS but uploading works.
+    Don't bother trying Chrome on iOS. We're working on it. (What is this, 1999?)
+    </p>
+
+   <div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate</div>
+  	<h3>Recordings</h3>
+  	<ol id="recordingsList"></ol>
+
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	<!-- script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script -->
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.6/wavesurfer.min.js"></script -->
+
+    <!--
+        # Makes use of:
+        - https://wavesurfer-js.org/
+        - https://github.com/mattdiamond/Recorderjs
+    -->
+
+    <script src="js/wavesurfer.min.js"></script>
+  	<script src="js/recorder.js"></script>
+  	<script src="js/app.js"></script>
+    
+  </body>
+</html>
